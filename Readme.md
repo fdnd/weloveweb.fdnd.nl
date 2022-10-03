@@ -11,13 +11,13 @@
 - Vrijdag 4 November, Hidde de Vries over WCAG
 
 ## Sprint 4: Look and Feel, Sprint 16: Team Up
-- Vrijdag 25 November, Valerie Fuchs, a design and dev case study of tech-imposters.com
+- Vrijdag 25 November
 
 ## Sprint 5: Fix the Flow, Sprint 17: Back to Static
 - Vrijdag 16 December 
 
 ## Sprint 6: The Startup, sprint 18: Let's JAM
-- Vrijdag 20 Januari 
+- Vrijdag 20 Januari, Valerie Fuchs, a design and dev case study of tech-imposters.com
 
 
 
