@@ -1,4 +1,4 @@
-# We ♥ Web bij FDNDN
+# We ♥ Web bij FDND
 
 Inspirerende en leerzame presentaties bij FDND. Voor nerds, door nerds.
 
