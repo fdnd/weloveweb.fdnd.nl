@@ -6,7 +6,8 @@
   --green: #66E5BF;
   --yellow: #FFFC86;
   --angle: 42deg;
-  --base-color: var(--purple);
+  
+  --base-color: var(--yellow);
 
   --background: var(--grey);
   --color: var(--blue);
@@ -15,47 +16,45 @@
   --accent-color-1: var(--purple);
   --accent-color-2: var(--green);
   --accent-color-3: var(--yellow);
+  
+  --grid-1: 100vw / 24;
+  --grid-1-calc: calc(var(--grid-1));
 
   --accent-color-1-rgb: 166, 117, 245;
 
-  --grid-1: 100vw / 24;
-  --grid-1-calc: calc(var(--grid-1));
-  --padding-side: clamp(1rem, var(--grid-1-calc), 5rem);
-
+  --padding: 1.5rem;
+  --padding-side: 1.5rem;
+  --padding-top: clamp(2rem, var(--grid-1-calc), 8rem);
+  
   --small-radius: 0.5rem;
   --section-width: calc(100vw - 3rem);
   --max-width: 117rem;
-  /* Animated to 1.5 in js: */
-  --radius: 0.5rem;
+  --border-width: 2px;
 
+  --radius: 1.5rem;
+  
   --calc-side: calc((100vw - var(--max-width)) / 2);
 }
 
+@media (min-width: 1920px) {
+  :root {
+    --padding-side: calc((100vw - 1920px) / 2 + var(--padding));
+  }
+} 
+@media (max-width: 750px) {
+  :root {
+    --padding: 1rem;
+    --padding-side: var(--padding);
+  }
+}
 
 @media (max-width: 750px) {
   :root {
     /* Animated to 1 in js: */
-    --radius: 0.5rem;
+    --radius: 1rem;
     --section-width: calc(100vw - 2rem);
   }
 }
-
-@media (prefers-reduced-motion) {
-
-  body,
-  :root {
-    --radius: 1.5rem !important;
-  }
-}
-
-@media (prefers-reduced-motion) and (max-width: 750px) {
-
-  body,
-  :root {
-    --radius: 1rem !important;
-  }
-}
-
 /* Reset */
 
 * {
@@ -72,7 +71,7 @@ a {
 
 /* Typo */
 .font-bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .font-semibold {
@@ -84,7 +83,7 @@ a {
 }
 
 .font-regular {
-  font-weight: 400;
+  font-weight: 320;
 }
 
 .xlarge-heading {
@@ -125,16 +124,17 @@ a {
 }
 
 .medium-body {
-  font-size: clamp(0.875rem, calc(16 / 60 * var(--grid-1)), 1.25rem);
+  font-size: clamp(1rem, calc(16 / 60 * var(--grid-1)), 1.15rem);
   letter-spacing: -0.04em;
   line-height: 1.5;
 }
 
 .small-body {
-  font-size: clamp(0.75rem, calc(14 / 60 * var(--grid-1)), 1.125rem);
+  font-size: clamp(0.875rem, calc(14 / 60 * var(--grid-1)), 1rem);
   letter-spacing: -0.04em;
   line-height: 1.5;
 }
+
 
 .xsmall-body {
   font-size: 12px;
@@ -163,10 +163,18 @@ a {
   margin-top: 1.1em;
 }
 
+.p .small-heading+.xsmall-body {
+  margin-top: 0.5em;
+}
+
 .p p+.medium-heading,
 .p details+.medium-heading,
 .p p+.small-heading {
   margin-top: 1.5em;
+}
+
+.p .xlarge-body+p {
+  margin-top: 0.5em;
 }
 
 .p p+p {
@@ -218,11 +226,23 @@ a {
   }
 }
 
-/* Basics */
+/* Utility */
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); /* for IE only */
+  clip-path: inset(50%);
+}
 
-html,
-body {
-  scroll-behavior: smooth;
+/* Basics */
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
 }
 
 html {
@@ -233,4 +253,97 @@ body {
   background-color: var(--base-color);
   color: var(--color);
   font-family: 'Open Sans', sans-serif;
+  padding: var(--padding);
+}
+main {
+  background-color: var(--background);
+  padding: var(--padding) var(--padding-side);
+  border-radius: var(--radius);
+}
+/* Buttons */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: -0.04em;
+  font-weight: 550;
+  font-size: clamp(1rem, calc(16 / 60 * var(--grid-1)), 1.25rem);
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+
+}
+
+.button:hover span,
+.button:focus span {
+  transform: translate(-1px, 1px);
+}
+
+
+.button span {
+  position: relative;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--small-radius);
+  border: 1px solid currentcolor;
+  background: var(--background);
+  transition: translate 0.3s ease-out;
+
+}
+
+.button.is-full-color.is-accent-1 span,
+.button.is-full-color.is-accent-1::before {
+  background: var(--accent-color-1);
+}
+
+.button.is-full-color.is-accent-2 span,
+.button.is-full-color.is-accent-2::before {
+  background: var(--accent-color-2);
+}
+
+.button.is-full-color.is-accent-3 span,
+.button.is-full-color.is-accent-3::before {
+  background: var(--accent-color-3);
+}
+
+.button.is-dark span {
+  background: var(--color);
+  color: var(--button-color);
+  border-color: var(--color);
+}
+
+.button.is-dark::before {
+  background: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  right: 4px;
+  bottom: -2px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--small-radius);
+  border: 1px solid currentcolor;
+  background: var(--background);
+  transition: background 0.2s ease-out;
+}
+
+.button:focus::before {
+  /* HAHAH 🤡 geef mij maar bem */
+  background-color: var(--color) !important;
 }
