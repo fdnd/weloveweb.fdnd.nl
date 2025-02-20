@@ -1,0 +1,349 @@
+:root {
+  --grey: #ECECEC;
+  --purple: #A675F5;
+  --blue: #050542;
+  --blue-50: rgba(5, 5, 66, 0.5);
+  --green: #66E5BF;
+  --yellow: #FFFC86;
+  --angle: 42deg;
+  
+  --base-color: var(--yellow);
+
+  --background: var(--grey);
+  --color: var(--blue);
+  --button-color: var(--grey);
+
+  --accent-color-1: var(--purple);
+  --accent-color-2: var(--green);
+  --accent-color-3: var(--yellow);
+  
+  --grid-1: 100vw / 24;
+  --grid-1-calc: calc(var(--grid-1));
+
+  --accent-color-1-rgb: 166, 117, 245;
+
+  --padding: 1.5rem;
+  --padding-side: 1.5rem;
+  --padding-top: clamp(2rem, var(--grid-1-calc), 8rem);
+  
+  --small-radius: 0.5rem;
+  --section-width: calc(100vw - 3rem);
+  --max-width: 117rem;
+  --border-width: 2px;
+
+  --radius: 1.5rem;
+  
+  --calc-side: calc((100vw - var(--max-width)) / 2);
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --padding-side: calc((100vw - 1920px) / 2 + var(--padding));
+  }
+} 
+@media (max-width: 750px) {
+  :root {
+    --padding: 1rem;
+    --padding-side: var(--padding);
+  }
+}
+
+@media (max-width: 750px) {
+  :root {
+    /* Animated to 1 in js: */
+    --radius: 1rem;
+    --section-width: calc(100vw - 2rem);
+  }
+}
+/* Reset */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Typo */
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 550;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-regular {
+  font-weight: 320;
+}
+
+.xlarge-heading {
+  font-size: clamp(2.5rem, calc(64 / 60 * var(--grid-1)), 5rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.large-heading {
+  font-size: clamp(2rem, calc(52 / 60 * var(--grid-1)), 4.375rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.medium-heading {
+  font-size: clamp(1.5rem, calc(40 / 60 * var(--grid-1)), 3.25rem);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.small-heading {
+  font-size: clamp(1rem, calc(18 / 60 * var(--grid-1)), 1.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.xlarge-body {
+  font-size: clamp(1.25rem, calc(24 / 60 * var(--grid-1)), 2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.33;
+}
+
+
+.large-body {
+  font-size: clamp(1rem, calc(18 / 60 * var(--grid-1)), 1.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+}
+
+.medium-body {
+  font-size: clamp(1rem, calc(16 / 60 * var(--grid-1)), 1.15rem);
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+}
+
+.small-body {
+  font-size: clamp(0.875rem, calc(14 / 60 * var(--grid-1)), 1rem);
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+}
+
+
+.xsmall-body {
+  font-size: 12px;
+  letter-spacing: 0em;
+  line-height: 1.5;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* Spacing */
+.p {
+  font-size: clamp(1rem, calc(18 / 60 * var(--grid-1)), 1.5rem);
+  letter-spacing: -0.03em;
+}
+
+.p .large-heading+p {
+  margin-top: 1em;
+}
+
+.p .medium-heading+p,
+.p .medium-heading+details,
+.p .small-heading+p {
+  margin-top: 1.1em;
+}
+
+.p .small-heading+.xsmall-body {
+  margin-top: 0.5em;
+}
+
+.p p+.medium-heading,
+.p details+.medium-heading,
+.p p+.small-heading {
+  margin-top: 1.5em;
+}
+
+.p .xlarge-body+p {
+  margin-top: 0.5em;
+}
+
+.p p+p {
+  margin: 1.1em 0 0;
+}
+
+.p p+.large-body {
+  margin-top: 1.1em;
+}
+
+.p p+p.small-body {
+  margin-top: 0.3em;
+}
+
+.p p+.button-row {
+  margin-top: 1rem;
+}
+
+.p .button+p,
+.p .button+h1,
+.p .button+h2,
+.p .button+h3,
+.p .button+h4,
+.p .button+h5,
+.p .button+h6 {
+  margin-top: 2em;
+}
+
+@media (max-width: 750px) {
+
+  .p p+.button-row,
+  .p p+.button {
+    margin-top: 1.5rem;
+
+  }
+}
+
+.p .button-row+p,
+.p .button+p {
+  margin-top: 2rem;
+
+}
+
+@media (max-width: 750px) {
+
+  .p .button-row+p,
+  .p .button+p {
+    margin-top: 1rem;
+  }
+}
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); /* for IE only */
+  clip-path: inset(50%);
+}
+
+/* Basics */
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  background-color: var(--base-color);
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--color);
+  font-family: 'Open Sans', sans-serif;
+  padding: var(--padding);
+}
+main {
+  background-color: var(--background);
+  padding: var(--padding) var(--padding-side);
+  border-radius: var(--radius);
+}
+/* Buttons */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: -0.04em;
+  font-weight: 550;
+  font-size: clamp(1rem, calc(16 / 60 * var(--grid-1)), 1.25rem);
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+
+}
+
+.button:hover span,
+.button:focus span {
+  transform: translate(-1px, 1px);
+}
+
+
+.button span {
+  position: relative;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--small-radius);
+  border: 1px solid currentcolor;
+  background: var(--background);
+  transition: translate 0.3s ease-out;
+
+}
+
+.button.is-full-color.is-accent-1 span,
+.button.is-full-color.is-accent-1::before {
+  background: var(--accent-color-1);
+}
+
+.button.is-full-color.is-accent-2 span,
+.button.is-full-color.is-accent-2::before {
+  background: var(--accent-color-2);
+}
+
+.button.is-full-color.is-accent-3 span,
+.button.is-full-color.is-accent-3::before {
+  background: var(--accent-color-3);
+}
+
+.button.is-dark span {
+  background: var(--color);
+  color: var(--button-color);
+  border-color: var(--color);
+}
+
+.button.is-dark::before {
+  background: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  right: 4px;
+  bottom: -2px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--small-radius);
+  border: 1px solid currentcolor;
+  background: var(--background);
+  transition: background 0.2s ease-out;
+}
+
+.button:focus::before {
+  /* HAHAH 🤡 geef mij maar bem */
+  background-color: var(--color) !important;
+}
