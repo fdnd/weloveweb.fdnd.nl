@@ -1,5 +1,6 @@
 export function prettyDate(rawDate) {
   const date = new Date(rawDate)
+  
   let day = date.getDate()
   // get Dutch month name
   let month = date.toLocaleString('default', { month: 'long' })

@@ -4,7 +4,7 @@
   --blue: #050542;
   --blue-50: rgba(5, 5, 66, 0.5);
   --green: #66E5BF;
-  --yellow: #FFFC86;
+  --yellow: #E2FC91;
   --angle: 42deg;
   
   --base-color: var(--yellow);
@@ -137,7 +137,7 @@ a {
 
 
 .xsmall-body {
-  font-size: 12px;
+  font-size: clamp(0.625rem, calc(12 / 60 * var(--grid-1)), 0.875rem);
   letter-spacing: 0em;
   line-height: 1.5;
 }
@@ -255,10 +255,21 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding: var(--padding);
 }
+@media (max-width: 750px) {
+  body {
+    padding: 0.5rem;
+  }
+}
+
 main {
   background-color: var(--background);
   padding: var(--padding) var(--padding-side);
   border-radius: var(--radius);
+}
+@media (max-width: 750px) {
+  main {
+    padding: var(--padding) 0.75rem;
+  }
 }
 /* Buttons */
 .button-row {

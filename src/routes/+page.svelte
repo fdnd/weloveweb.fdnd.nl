@@ -42,6 +42,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 0 var(--padding); /*only horizontal gaps*/
   }
+  
   .intro > * {
     grid-column: 4 / span 6;
   }
