@@ -45,8 +45,9 @@
       {speaker.title}
     </h2>
     <p class="event-info__date caps meta xsmall-body font-medium">
+      {prettyDate(speaker.date)} | 
       <span class="sr-only"> Tijd: </span>
-      {speaker.time} uur
+      {speaker.time} uur |
       <span class="sr-only"> Locatie: </span>
       {speaker.location}
     </p>
