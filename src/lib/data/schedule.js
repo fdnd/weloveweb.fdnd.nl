@@ -108,9 +108,9 @@ export const weLoveWebSpeakers = [
   {
     name: 'Cassie Evans',
     job_title: 'Creative Coder',
-    title: 'TBA',
-    talk_description: 'Zeg je creative development, dan zeg je GSAP. Cassie komt helemaal uit Engeland om ons meer te vertellen over animatie en creativiteit! 🤩',
-    bio: 'Cassie is een Creative Coder bij GSAP, en de queen van Tweeny World.',
+    title: 'Beyond tweening',
+    talk_description: 'GSAP’s API is packed with powerful features — but some of the coolest ones fly under the radar. In this session, Cassie will highlight some of her favourite hidden gems in the GSAP ecosystem, so you can level up your animations.',
+    bio: 'Cassie is een creative developer met een achtergrond in design. Ze spreekt regelmatig op conferenties over de animatie library GSAP.',
     image: 'sprekers/2425/cassie.jpg',
     url: 'https://www.cassie.codes/', 
     company: 'GSAP',

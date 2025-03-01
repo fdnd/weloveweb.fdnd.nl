@@ -107,6 +107,10 @@
   align-content: start;
 }
 
+.speaker-talk-description {
+  margin-top: 0.5em;
+}
+
 .speaker-info {
   position: relative;
   grid-column: 2 / -1;
