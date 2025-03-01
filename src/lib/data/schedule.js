@@ -110,7 +110,7 @@ export const weLoveWebSpeakers = [
     job_title: 'Creative Coder',
     title: 'Beyond tweening',
     talk_description: 'GSAP’s API is packed with powerful features — but some of the coolest ones fly under the radar. In this session, Cassie will highlight some of her favourite hidden gems in the GSAP ecosystem, so you can level up your animations.',
-    bio: 'Cassie is een creative developer met een achtergrond in design. Ze spreekt regelmatig op conferenties over de animatie library GSAP.',
+    bio: 'Cassie Evans, also known as Fairy Codemother and Queen of Tweeny World, works for GSAP as a creative coder. She\'s a creative force on a mission to make the web a more delightful place, one animation at a time.',
     image: 'sprekers/2425/cassie.jpg',
     url: 'https://www.cassie.codes/', 
     company: 'GSAP',
