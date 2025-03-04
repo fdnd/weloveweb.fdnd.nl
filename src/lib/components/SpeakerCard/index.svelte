@@ -49,7 +49,7 @@
       <span class="sr-only"> Tijd: </span>
       {speaker.time} uur |
       <span class="sr-only"> Locatie: </span>
-      {speaker.location}
+      {@html speaker.location}
     </p>
     {#if speaker.talk_description}
       <p class="speaker-talk-description small-body">

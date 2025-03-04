@@ -103,7 +103,7 @@ export const weLoveWebSpeakers = [
     company_url: 'https://polypane.app/',
     date: '02/14/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
   {
     name: 'Cassie Evans',
@@ -117,7 +117,7 @@ export const weLoveWebSpeakers = [
     company_url: 'https://www.gsap.com/',
     date: '03/07/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
   {
     name: 'TBA',
@@ -129,7 +129,7 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '03/23/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
   {
     name: 'TBA',
@@ -141,7 +141,7 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '04/25/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
   {
     name: 'Kalok Yeung',
@@ -155,7 +155,7 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '05/23/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
   {
     name: 'TBA',
@@ -167,6 +167,6 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '06/13/2025',
     time: '13:00-14:00',
-    location: 'WBH 01B17',
+    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   }
 ];
