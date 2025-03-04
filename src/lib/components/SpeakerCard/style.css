@@ -142,13 +142,14 @@
 .speaker-info::after {
   content: "";
   position: absolute;
+  z-index: -1;
   top: calc(0.25rem + calc(var(--border-width)));
   right: calc(100% + var(--border-width));
   border-radius: 0 50% 0 0;
-  background-color: var(--background);
+  /* background-color: var(--background); */
   box-shadow:
     0 0 0 currentColor,
-    0px -5px 0 currentColor;
+    0.25rem -5px 0 currentColor;
   width: calc(var(--small-radius) * 1.5);
   height: calc(var(--small-radius) * 1.5);
 }
