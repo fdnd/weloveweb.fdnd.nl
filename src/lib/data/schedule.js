@@ -127,7 +127,7 @@ export const weLoveWebSpeakers = [
     url: '',
     company: '',
     company_url: '',
-    date: '03/23/2025',
+    date: '03/28/2025',
     time: '13:00-14:00',
     location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
   },
