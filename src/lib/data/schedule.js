@@ -122,7 +122,7 @@ export const weLoveWebSpeakers = [
   {
     name: 'Ischa Gast',
     title: 'Accessibility',
-    bio: 'Ischa Gast is spreading some accessibility love ❤️ @ Schiphol.nl',
+    bio: 'Spreading some accessibility love ❤️',
     image: '/sprekers/2425/ischa.jpg',
     url: 'https://www.linkedin.com/in/ischagast/',
     company: 'Schiphol.nl',
