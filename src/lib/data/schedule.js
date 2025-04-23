@@ -135,8 +135,8 @@ export const weLoveWebSpeakers = [
   {
     name: 'Niels Leenheer',
     bio: 'Ever since I saw the very first web browser by Tim Berners-Lee I’ve been fascinated by the web. I love web standards and open source. Currently I run HTML5test.com, created WhichBrowser.net and I regularly speak at conferences. I am also part of the Fronteers Conference committee. Follow me on Bluesky at @html5test.com and on Mastodon at @html5test@front-end.social.',
-    title: 'TBA',
-    talk_description: '',
+    title: 'Resilience',
+    talk_description: 'Één van de basisprincipes van HTML is dat het resilient is, oftewel bestendig tegen fouten. We gaan kijken hoe dit principe werkt in de browser en wat voor gevolgen dit heeft voor backwards compatibiliteit, hoe het modern web development mogelijk maakt en wat het betekent voor toekomstbestendigheid.',
     image: '/sprekers/2425/niels.jpg',
     url: 'https://nielsleenheer.com/',
     company: 'Salonhub',
