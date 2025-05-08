@@ -148,8 +148,8 @@ export const weLoveWebSpeakers = [
   {
     name: 'Kalok Yeung',
     job_title: 'Freelance Creative Director/Designer',
-    title: 'TBA',
-    talk_description: 'TBA',
+    title: 'Emotional Interface',
+    talk_description: 'De rol van oxytocine in de gebruikerservaring, en hoe micro-interacties, motion design en ontwerpdetails bijdragen aan een memorabele digitale ervaring.',
     bio: 'Kalok Yeung is een Freelance Creative Director/Designer, hij heeft onder andere voor Bakken & Bæck en Antinomy Studio gewerkt.',
     image: 'sprekers/2425/kalok.jpg',
     url: 'https://kalokyeung.com/',
