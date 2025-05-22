@@ -143,7 +143,7 @@ export const weLoveWebSpeakers = [
     company_url: 'https://salonhub.nl/',
     date: '04/25/2025',
     time: '13:00-14:00',
-    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
+    location: '<a href="https://www.hva.nl/locaties/wibauthuis">WBH01B17</a>',
   },
   {
     name: 'Kalok Yeung',
@@ -157,7 +157,7 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '05/23/2025',
     time: '13:00-14:00',
-    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
+    location: '<a href="https://www.hva.nl/locaties/wibauthuis">WBH01B17</a>',
   },
   {
     name: 'TBA',
@@ -169,6 +169,6 @@ export const weLoveWebSpeakers = [
     company_url: '',
     date: '06/13/2025',
     time: '13:00-14:00',
-    location: '<a href="https://www.hva.nl/locaties/hva-locaties/benno-premselahuis.html">BPH 00B02 Auditorium</a>',
+    location: '<a href="https://www.hva.nl/locaties/wibauthuis">WBH01B17</a>',
   }
 ];
