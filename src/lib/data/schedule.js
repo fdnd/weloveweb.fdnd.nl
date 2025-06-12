@@ -160,15 +160,14 @@ export const weLoveWebSpeakers = [
     location: '<a href="https://www.hva.nl/locaties/wibauthuis">WBH01B17</a>',
   },
   {
-    name: 'TBA',
-    title: 'TBA',
-    bio: '',
-    image: '/sprekers/placeholder.jpg',
-    url: '',
-    company: '',
-    company_url: '',
+    name: 'Hidde de Vries',
+    title: 'display: green; applying the web sustainability guidelines',
+    talk_description: 'De rol van oxytocine in de gebruikerservaring, en hoe micro-interacties, motion design en ontwerpdetails bijdragen aan een memorabele digitale ervaring.',
+    bio: 'Hidde is a freelance front-end, design systems and accessibility specialist (CPWA). He is also involved in the W3C’s Open UI Community Group and Accessibility Guidelines Working Group. His favourite programming language is CSS and he strongly believes in a web that puts people first. Hidde writes about these things and more on hidde.blog. In his free time, he works on a coffee table book covering the video conferencing applications of our decade.',
+    image: '/sprekers/2425/hidde.jpg',
+    url: 'https://hidde.blog/',
     date: '06/13/2025',
-    time: '13:00-14:00',
+    time: '12:00–13:00',
     location: '<a href="https://www.hva.nl/locaties/wibauthuis">WBH01B17</a>',
   }
 ];
