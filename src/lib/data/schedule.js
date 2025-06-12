@@ -162,7 +162,7 @@ export const weLoveWebSpeakers = [
   {
     name: 'Hidde de Vries',
     title: 'display: green; applying the web sustainability guidelines',
-    talk_description: 'De rol van oxytocine in de gebruikerservaring, en hoe micro-interacties, motion design en ontwerpdetails bijdragen aan een memorabele digitale ervaring.',
+    talk_description: 'The tech sector has an elephant in the room: we use too much energy. In 2024, the World Bank estimated the internet to account for 1-4% of global greenhouse emissions, similar to aviation. The good news is: there are documented and measurable opportunities to improve. From code to infrastructure. In this talk, we’ll look at best practices from the W3C’s new Web Sustainability Guidelines and beyond, focusing on lessons you can apply today.',
     bio: 'Hidde is a freelance front-end, design systems and accessibility specialist (CPWA). He is also involved in the W3C’s Open UI Community Group and Accessibility Guidelines Working Group. His favourite programming language is CSS and he strongly believes in a web that puts people first. Hidde writes about these things and more on hidde.blog. In his free time, he works on a coffee table book covering the video conferencing applications of our decade.',
     image: '/sprekers/2425/hidde.jpg',
     url: 'https://hidde.blog/',
