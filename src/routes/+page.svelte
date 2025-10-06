@@ -1,7 +1,7 @@
 <script>
   import { Header, SpeakerCard, Footer } from "$lib/components";
 
-  import { weLoveWebSpeakers } from "$lib/data/schedule.js";
+  import { weLoveWebSpeakers } from "$lib/data/schedule-2425.js";
   import { getDateTimeString } from "$lib/utils/date.js";
 
   let nextEvent = null;
