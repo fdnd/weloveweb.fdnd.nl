@@ -4,6 +4,7 @@ Inspirerende en leerzame presentaties bij FDND. Voor nerds, door nerds.
 
 ## Programma
 
+- [studiejaar 2526](2526.md)
 - [studiejaar 2425](2425.md)
 - [studiejaar 2324](2324.md)
 - [studiejaar 2223](2223.md)
